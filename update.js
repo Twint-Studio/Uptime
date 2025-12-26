@@ -36,7 +36,7 @@ async function check(service) {
 }
 
 async function main() {
-    const data = JSON.parse(await fs.readFile(FILE, "utf8"));
+    const data = require(FILE);
 
     for (const group of data) {
         for (const service of group.status) {
@@ -51,4 +51,4 @@ async function main() {
     console.log("Status updated");
 }
 
-main().catch(console.error);
+main();

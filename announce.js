@@ -2,13 +2,13 @@ const fs = require("fs/promises");
 
 const FILE = "./src/assets/json/announce.json";
 const ACTIONS = ["opened", "edited", "labeled", "unlabeled", "reopened"];
-const COMMON = ["info", "warning", "danger", "success", "error"];
+const COMMON = ["info",  "success", "warning", "error"];
 
 async function main() {
     const event = process.env.GITHUB_EVENT_PATH;
     if (!event) return;
 
-    const { action, issue } = JSON.parse(await fs.readFile(event, "utf8"));
+    const { action, issue } = require(event);
     if (!issue?.title) return;
 
     if (action === "deleted") return await fs.writeFile(FILE, "{}\n");
