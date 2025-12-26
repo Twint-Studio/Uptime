@@ -29,6 +29,20 @@ jobs:
       - name: Build Site
         run: bun index.js
 
+      - name: Commit and push
+        run: |
+          git config user.name actions[bot]
+          git config user.email actions@serversmp.xyz
+
+          git add -A
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Uptime"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+
       - name: Create Artifact
         uses: actions/upload-pages-artifact@v4
         with:
