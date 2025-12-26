@@ -3,6 +3,34 @@ const fs = require("fs/promises");
 const FILE = "./src/assets/json/status.json";
 const TIMEOUT = 10000;
 
+async function discord(name, url, type = "down") {
+    const webhook = process.env.DISCORD;
+    if (!webhook) return;
+
+    try {
+        await fetch(webhook, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                content: "@everyone",
+                embeds: [
+                    {
+                        title: type === "down" ? `❌ Your service ${name} went down. ❌` : `✅ Your service ${name} is back up. ✅`,
+                        fields: [
+                            { name: "Service Name", value: name },
+                            { name: "Service URL", value: url }
+                        ],
+                        color: type === "down" ? 16711680 : 3066993,
+                        timestamp: new Date().toISOString()
+                    }
+                ]
+            })
+        });
+    } catch (error) {
+        console.error("Failed to send Discord webhook:", error);
+    }
+}
+
 async function check(service) {
     let status = 0;
 
@@ -31,6 +59,10 @@ async function check(service) {
     const ok = service.raw.filter(r => r.status >= 200 && r.status < 400).length;
 
     service.uptime = Math.round((ok / total) * 100);
+
+    const prev = service.raw.length > 1 ? service.raw[service.raw.length - 2].status : null;
+
+    if ((status === 0 && prev !== 0) || (status !== 0 && prev === 0)) await discord(service.name, service.url, status === 0 ? "down" : "up");
 
     return service;
 }

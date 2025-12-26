@@ -35,6 +35,8 @@ jobs:
       - name: Update Status
         if: ${{ github.event_name != 'issues' }}
         run: bun update.js
+        env:
+          DISCORD: ${{ vars.DISCORD }}
 
       - name: Check for changes
         id: changes
