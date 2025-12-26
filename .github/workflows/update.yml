@@ -1,0 +1,45 @@
+name: Build Uptime
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions: write-all
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  website:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Build Site
+        run: bun index.js
+
+      - name: Create Artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          name: website
+          path: ./dist/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: website
