@@ -25,6 +25,8 @@ async function check(service) {
 
     service.raw.push({ status, date: now });
 
+    if (service.raw.length > 50) service.raw = service.raw.slice(-50);
+
     const total = service.raw.length;
     const ok = service.raw.filter(r => r.status >= 200 && r.status < 400).length;
 
