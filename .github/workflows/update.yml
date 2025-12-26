@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "*/30 * * * *"
   issues:
-    types: [opened, edited, closed, deleted, labeled, unlabeled]
+    types: [edited, closed, deleted, labeled]
   workflow_dispatch:
 
 permissions: write-all
@@ -29,37 +29,44 @@ jobs:
         uses: oven-sh/setup-bun@v2
 
       - name: Update Announcement
-        if: ${{ github.event.issue && github.event.issue.user.login == github.repository_owner }}
+        if: ${{ github.event.issue && github.event.issue.user.login == 'Prince527GitHub' }}
         run: bun announce.js
 
       - name: Update Status
         if: ${{ github.event_name != 'issues' }}
         run: bun update.js
 
+      - name: Check for changes
+        id: changes
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
       - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
         run: |
           git config user.name actions[bot]
           git config user.email actions@serversmp.xyz
-
-          git add -A
-
-          if ! git diff --cached --quiet; then
-            git commit -m "Update Uptime"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+          git commit -m "Update Uptime"
+          git push
 
       - name: Create Artifact
+        if: steps.changes.outputs.changed == 'true'
         uses: actions/upload-pages-artifact@v4
         with:
           name: website
           path: ./src/
 
       - name: Setup Pages
+        if: steps.changes.outputs.changed == 'true'
         uses: actions/configure-pages@v5
 
       - name: Deploy to GitHub Pages
+        if: steps.changes.outputs.changed == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
         with:
