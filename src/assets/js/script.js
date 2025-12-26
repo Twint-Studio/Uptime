@@ -1,6 +1,5 @@
 const container = document.querySelector(".group");
 
-
 function timeAgo(input) {
     const date = input instanceof Date ? input : new Date(input);
     const seconds = Math.floor((Date.now() - date.getTime()) / 1000);
@@ -29,7 +28,9 @@ function getColor(uptime) {
 }
 
 async function getUptime() {
-    const categories = await fetch("status.json").then(r => r.json());
+    container.innerHTML = "";
+
+    const categories = await (await fetch("status.json")).json();
 
     categories.forEach(({ name, status }) => {
         const cate = document.createElement("div");
@@ -74,3 +75,5 @@ setInterval(() => {
     const dates = document.querySelectorAll("[data-date]");
     for (const date of dates) date.innerText = `Updated ${timeAgo(+date.dataset.date)}`;
 }, 1000);
+
+setInterval(() => getUptime(), 1800000);

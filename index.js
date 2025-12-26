@@ -1,7 +1,7 @@
 const fs = require("fs/promises");
 
 const FILE = "./src/status.json";
-const TIMEOUT = 10_000;
+const TIMEOUT = 10000;
 
 async function check(service) {
     let status = 0;
