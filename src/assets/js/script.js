@@ -21,6 +21,21 @@ function timeAgo(input) {
     }
 }
 
+async function getAnnouncement() {
+    const data = await (await fetch("assets/json/announce.json")).json();
+
+    if (!data.name || !data.type) return;
+
+    container.innerHTML += /* html */`
+        <div class="alert alert-${data.type}">
+            <div class="alert-container">
+                <svg class="alert-icon" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                <span class="alert-text">${data.name}</span>
+            </div>
+        </div>
+    `
+}
+
 function getColor(uptime) {
     if (uptime < 90) return "var(--error)";
     if (uptime < 98) return "var(--warning)";
@@ -28,9 +43,9 @@ function getColor(uptime) {
 }
 
 async function getUptime() {
-    container.innerHTML = "";
+    for (const element of document.querySelectorAll(".category")) element.remove();
 
-    const categories = await (await fetch("status.json")).json();
+    const categories = await (await fetch("assets/json/status.json")).json();
 
     categories.forEach(({ name, status }) => {
         const cate = document.createElement("div");
@@ -69,6 +84,7 @@ async function getUptime() {
     });
 }
 
+getAnnouncement();
 getUptime();
 
 setInterval(() => {

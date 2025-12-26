@@ -3,6 +3,8 @@ name: Build Uptime
 on:
   schedule:
     - cron: "*/30 * * * *"
+  issues:
+    types: [opened, edited, closed, deleted, labeled, unlabeled]
   workflow_dispatch:
 
 permissions: write-all
@@ -26,8 +28,13 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
 
-      - name: Build Site
-        run: bun index.js
+      - name: Update Announcement
+        if: ${{ github.event.issue && github.event.issue.user.login == github.repository_owner }}
+        run: bun announce.js
+
+      - name: Update Status
+        if: ${{ github.event_name != 'issues' }}
+        run: bun update.js
 
       - name: Commit and push
         run: |

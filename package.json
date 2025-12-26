@@ -2,8 +2,9 @@
   "name": "uptime",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "update": "bun update.js",
+    "announce": "bun announce.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
