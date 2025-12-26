@@ -26,14 +26,20 @@ async function getAnnouncement() {
 
     if (!data.name || !data.type) return;
 
-    container.innerHTML += /* html */`
-        <div class="alert alert-${data.type}">
-            <div class="alert-container">
-                <svg class="alert-icon" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-                <span class="alert-text">${data.name}</span>
+    const old = container.querySelector('.alert');
+    if (old) old.remove();
+
+    container.insertAdjacentHTML(
+      "afterbegin",
+      /* html */`
+            <div class="alert alert-${data.type}">
+                <div class="alert-container">
+                    <svg class="alert-icon" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                    <span class="alert-text">${data.name}</span>
+                </div>
             </div>
-        </div>
-    `
+        `
+    );
 }
 
 function getColor(uptime) {
@@ -92,4 +98,5 @@ setInterval(() => {
     for (const date of dates) date.innerText = `Updated ${timeAgo(+date.dataset.date)}`;
 }, 1000);
 
-setInterval(() => getUptime(), 1800000);
+setInterval(getUptime, 1800000);
+setInterval(getAnnouncement, 3600000);
