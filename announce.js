@@ -9,7 +9,7 @@ async function main() {
     const { action, issue } = require(event);
     if (!issue?.title) return;
 
-    if (["deleted", "closed"].includes(action)) return await fs.writeFile(FILE, "{}\n");
+    if (["deleted", "closed"].includes(action)) return await fs.writeFile(FILE, "{}");
     if (!["edited", "labeled"].includes(action)) return;
 
     const first = issue.labels?.[0];
