@@ -62,7 +62,10 @@ async function check(service) {
 
     const prev = service.raw.length > 1 ? service.raw[service.raw.length - 2].status : null;
 
-    if ((status === 0 && prev !== 0) || (status !== 0 && prev === 0)) await discord(service.name, service.url, status === 0 ? "down" : "up");
+    const isDown = status === 0 || (status >= 400 && status < 600);
+    const wasDown = prev === 0 || (prev >= 400 && prev < 600);
+
+    if (isDown !== wasDown) await discord(service.name, service.url, isDown ? "down" : "up");
 
     return service;
 }
