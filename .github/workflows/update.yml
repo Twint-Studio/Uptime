@@ -33,7 +33,7 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           name: website
-          path: ./dist/
+          path: ./src/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
