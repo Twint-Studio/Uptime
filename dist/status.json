@@ -1,0 +1,140 @@
+[
+    {
+        "name": "Internal",
+        "status": [
+            {
+                "name": "Cloverse (lvl 1)",
+                "url": "https://ntfy.twint.my.id/",
+                "method": "GET",
+                "uptime": 100,
+                "raw": [
+                    {
+                        "status": 200,
+                        "date": 1766719476748
+                    },
+                    {
+                        "status": 200,
+                        "date": 1766720861940
+                    }
+                ]
+            },
+            {
+                "name": "Cloverse (lvl 2)",
+                "url": "https://git.serversmp.xyz/",
+                "method": "GET",
+                "uptime": 100,
+                "raw": [
+                    {
+                        "status": 200,
+                        "date": 1766719476748
+                    },
+                    {
+                        "status": 200,
+                        "date": 1766720862462
+                    }
+                ]
+            },
+            {
+                "name": "Cloverse (lvl 3)",
+                "url": "https://api.serversmp.xyz/",
+                "method": "GET",
+                "uptime": 100,
+                "raw": [
+                    {
+                        "status": 200,
+                        "date": 1766719476748
+                    },
+                    {
+                        "status": 200,
+                        "date": 1766720862839
+                    }
+                ]
+            },
+            {
+                "name": "Cloverse (lvl 4)",
+                "url": "https://chat.serversmp.xyz/",
+                "method": "GET",
+                "uptime": 100,
+                "raw": [
+                    {
+                        "status": 200,
+                        "date": 1766719476748
+                    },
+                    {
+                        "status": 200,
+                        "date": 1766720863278
+                    }
+                ]
+            },
+            {
+                "name": "Clovara",
+                "url": "https://pangolin.twint.my.id/",
+                "method": "GET",
+                "uptime": 100,
+                "raw": [
+                    {
+                        "status": 200,
+                        "date": 1766719476748
+                    },
+                    {
+                        "status": 200,
+                        "date": 1766720864390
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "External",
+        "status": [
+            {
+                "name": "Cloudflare",
+                "url": "https://search.twint.my.id/",
+                "method": "GET",
+                "uptime": 100,
+                "raw": [
+                    {
+                        "status": 200,
+                        "date": 1766719476748
+                    },
+                    {
+                        "status": 200,
+                        "date": 1766720864730
+                    }
+                ]
+            },
+            {
+                "name": "Heroku",
+                "url": "https://4get.twint.my.id/",
+                "method": "GET",
+                "uptime": 100,
+                "raw": [
+                    {
+                        "status": 200,
+                        "date": 1766719476748
+                    },
+                    {
+                        "status": 200,
+                        "date": 1766720865082
+                    }
+                ]
+            },
+            {
+                "name": "Github",
+                "url": "https://twint.my.id/",
+                "method": "GET",
+                "uptime": 100,
+                "raw": [
+                    {
+                        "status": 200,
+                        "date": 1766719476748
+                    },
+                    {
+                        "status": 200,
+                        "date": 1766720865420
+                    }
+                ]
+            }
+        ]
+    }
+]
