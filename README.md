@@ -1,3 +1,3 @@
 # Uptime
 
-Uptime checker for my services.
+Uptime monitor for my services.
