@@ -26,7 +26,7 @@ async function getAnnouncement() {
 
     if (!data.name || !data.type) return;
 
-    const old = container.querySelector('.alert');
+    const old = container.querySelector(".alert");
     if (old) old.remove();
 
     container.insertAdjacentHTML(
