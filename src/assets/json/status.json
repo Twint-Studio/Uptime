@@ -6,12 +6,8 @@
                 "name": "Cloverse (lvl 1)",
                 "url": "https://ntfy.twint.my.id/",
                 "method": "GET",
-                "uptime": 84,
+                "uptime": 82,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767507891872
-                    },
                     {
                         "status": 200,
                         "date": 1767509608165
@@ -207,6 +203,10 @@
                     {
                         "status": 0,
                         "date": 1767613217641
+                    },
+                    {
+                        "status": 0,
+                        "date": 1767616612690
                     }
                 ]
             },
@@ -216,10 +216,6 @@
                 "method": "GET",
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767507892342
-                    },
                     {
                         "status": 200,
                         "date": 1767509608570
@@ -415,6 +411,10 @@
                     {
                         "status": 200,
                         "date": 1767613219020
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767616613097
                     }
                 ]
             },
@@ -424,10 +424,6 @@
                 "method": "GET",
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767507892750
-                    },
                     {
                         "status": 200,
                         "date": 1767509608947
@@ -623,6 +619,10 @@
                     {
                         "status": 200,
                         "date": 1767613219571
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767616613473
                     }
                 ]
             },
@@ -632,10 +632,6 @@
                 "method": "GET",
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767507893200
-                    },
                     {
                         "status": 200,
                         "date": 1767509609260
@@ -831,6 +827,10 @@
                     {
                         "status": 200,
                         "date": 1767613220048
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767616613803
                     }
                 ]
             },
@@ -838,12 +838,8 @@
                 "name": "Clovara",
                 "url": "https://pangolin.twint.my.id/",
                 "method": "GET",
-                "uptime": 82,
+                "uptime": 80,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767507894016
-                    },
                     {
                         "status": 200,
                         "date": 1767509609991
@@ -1039,6 +1035,10 @@
                     {
                         "status": 0,
                         "date": 1767613220396
+                    },
+                    {
+                        "status": 0,
+                        "date": 1767616614218
                     }
                 ]
             }
@@ -1051,12 +1051,8 @@
                 "name": "Cloudflare",
                 "url": "https://search.twint.my.id/",
                 "method": "GET",
-                "uptime": 84,
+                "uptime": 82,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767507894149
-                    },
                     {
                         "status": 200,
                         "date": 1767509610233
@@ -1252,6 +1248,10 @@
                     {
                         "status": 0,
                         "date": 1767613220807
+                    },
+                    {
+                        "status": 0,
+                        "date": 1767616614572
                     }
                 ]
             },
@@ -1259,12 +1259,8 @@
                 "name": "Heroku",
                 "url": "https://4get.twint.my.id/",
                 "method": "GET",
-                "uptime": 84,
+                "uptime": 82,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767507894582
-                    },
                     {
                         "status": 200,
                         "date": 1767509610492
@@ -1460,6 +1456,10 @@
                     {
                         "status": 0,
                         "date": 1767613221226
+                    },
+                    {
+                        "status": 0,
+                        "date": 1767616614851
                     }
                 ]
             },
@@ -1467,12 +1467,8 @@
                 "name": "Github",
                 "url": "https://twint.my.id/",
                 "method": "GET",
-                "uptime": 84,
+                "uptime": 82,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767507894773
-                    },
                     {
                         "status": 200,
                         "date": 1767509610837
@@ -1668,6 +1664,10 @@
                     {
                         "status": 0,
                         "date": 1767613221506
+                    },
+                    {
+                        "status": 0,
+                        "date": 1767616615131
                     }
                 ]
             }
