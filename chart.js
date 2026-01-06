@@ -45,7 +45,10 @@ for (const { name: group, status } of data) {
             }
         });
 
-        await fs.writeFile(`${OUT}/${safe(group)}_${safe(name)}.png`, buffer);
+        const dir = `${OUT}/${safe(group)}`;
+
+        await fs.mkdir(dir, { recursive: true });
+        await fs.writeFile(`${dir}/${safe(name)}.png`, buffer);
 
         console.log(`Generated chart for ${name}`);
     }
