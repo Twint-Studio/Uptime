@@ -6,12 +6,8 @@
                 "name": "Cloverse (lvl 1)",
                 "url": "https://ntfy.twint.my.id/",
                 "method": "GET",
-                "uptime": 42,
+                "uptime": 44,
                 "raw": [
-                    {
-                        "status": 0,
-                        "date": 1767605402537
-                    },
                     {
                         "status": 0,
                         "date": 1767606919608
@@ -228,6 +224,11 @@
                         "status": 200,
                         "date": 1767709096109,
                         "time": 386
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767710871158,
+                        "time": 1577
                     }
                 ]
             },
@@ -237,10 +238,6 @@
                 "method": "GET",
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767605402933
-                    },
                     {
                         "status": 200,
                         "date": 1767606919936
@@ -457,6 +454,11 @@
                         "status": 200,
                         "date": 1767709096352,
                         "time": 243
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767710871563,
+                        "time": 404
                     }
                 ]
             },
@@ -466,10 +468,6 @@
                 "method": "GET",
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767605403430
-                    },
                     {
                         "status": 200,
                         "date": 1767606920271
@@ -686,6 +684,11 @@
                         "status": 200,
                         "date": 1767709096914,
                         "time": 562
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767710872048,
+                        "time": 484
                     }
                 ]
             },
@@ -695,10 +698,6 @@
                 "method": "GET",
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1767605403846
-                    },
                     {
                         "status": 200,
                         "date": 1767606920632
@@ -915,6 +914,11 @@
                         "status": 200,
                         "date": 1767709097186,
                         "time": 272
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767710872455,
+                        "time": 407
                     }
                 ]
             },
@@ -922,12 +926,8 @@
                 "name": "Clovara",
                 "url": "https://pangolin.twint.my.id/",
                 "method": "GET",
-                "uptime": 42,
+                "uptime": 44,
                 "raw": [
-                    {
-                        "status": 0,
-                        "date": 1767605404176
-                    },
                     {
                         "status": 0,
                         "date": 1767606920971
@@ -1144,6 +1144,11 @@
                         "status": 200,
                         "date": 1767709097795,
                         "time": 608
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767710873350,
+                        "time": 895
                     }
                 ]
             }
@@ -1156,12 +1161,8 @@
                 "name": "Cloudflare",
                 "url": "https://twint-uptime.pages.dev/",
                 "method": "GET",
-                "uptime": 72,
+                "uptime": 74,
                 "raw": [
-                    {
-                        "status": 0,
-                        "date": 1767605404471
-                    },
                     {
                         "status": 0,
                         "date": 1767606921241
@@ -1378,6 +1379,11 @@
                         "status": 200,
                         "date": 1767709097910,
                         "time": 115
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767710873460,
+                        "time": 110
                     }
                 ]
             },
@@ -1385,12 +1391,8 @@
                 "name": "Heroku",
                 "url": "https://twint-752c68c6572a.herokuapp.com/",
                 "method": "GET",
-                "uptime": 72,
+                "uptime": 74,
                 "raw": [
-                    {
-                        "status": 0,
-                        "date": 1767605404764
-                    },
                     {
                         "status": 0,
                         "date": 1767606921477
@@ -1607,6 +1609,11 @@
                         "status": 200,
                         "date": 1767709097948,
                         "time": 38
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767710873695,
+                        "time": 234
                     }
                 ]
             },
@@ -1614,12 +1621,8 @@
                 "name": "Github",
                 "url": "https://forkprince.github.io/SpaceWarp/",
                 "method": "GET",
-                "uptime": 72,
+                "uptime": 74,
                 "raw": [
-                    {
-                        "status": 0,
-                        "date": 1767605405084
-                    },
                     {
                         "status": 0,
                         "date": 1767606921792
@@ -1836,6 +1839,11 @@
                         "status": 200,
                         "date": 1767709097999,
                         "time": 51
+                    },
+                    {
+                        "status": 200,
+                        "date": 1767710873860,
+                        "time": 165
                     }
                 ]
             }
