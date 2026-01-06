@@ -24,10 +24,29 @@
     padding-top: .25rem;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 p,
 h2,
 h3 {
     margin: 0;
+}
+
+.alert {
+    transition: all 0.2s ease-in-out;
+}
+
+.alert:hover {
+    transform: scale(1.01);
+    opacity: .9;
+}
+
+.alert:active {
+    transform: scale(.98);
+    opacity: 1;
 }
 
 .status {

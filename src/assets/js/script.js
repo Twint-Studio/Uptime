@@ -30,14 +30,16 @@ async function getAnnouncement() {
     if (old) old.remove();
 
     container.insertAdjacentHTML(
-      "afterbegin",
-      /* html */`
-            <div class="alert alert-${data.type}">
-                <div class="alert-container">
-                    <svg class="alert-icon" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-                    <span class="alert-text">${data.name}</span>
+        "afterbegin",
+        /* html */`
+            <a href="${data.url}">
+                <div class="alert alert-${data.type}">
+                    <div class="alert-container">
+                        <svg class="alert-icon" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                        <span class="alert-text">${data.name}</span>
+                    </div>
                 </div>
-            </div>
+            </a>
         `
     );
 }

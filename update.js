@@ -32,8 +32,9 @@ async function discord(name, url, type = "down") {
 }
 
 async function check(service) {
-    let status = 0;
+    let status = 0, duration = 0;
 
+    const start = Date.now();
     try {
         const controller = new AbortController();
         const timer = setTimeout(() => controller.abort(), TIMEOUT);
@@ -47,11 +48,13 @@ async function check(service) {
         status = res.status;
     } catch {
         status = 0;
+    } finally {
+        duration = Date.now() - start;
     }
 
     const now = Date.now();
 
-    service.raw.push({ status, date: now });
+    service.raw.push({ status, date: now, time: duration });
 
     if (service.raw.length > 50) service.raw = service.raw.slice(-50);
 
