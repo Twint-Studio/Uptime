@@ -73,20 +73,16 @@ async function check(service) {
     return service;
 }
 
-async function main() {
-    const data = require(FILE);
+const data = require(FILE);
 
-    for (const group of data) {
-        for (const service of group.status) {
-            await check(service);
+for (const group of data) {
+    for (const service of group.status) {
+        await check(service);
 
-            console.log(`Status updated for ${service.name}`);
-        }
+        console.log(`Status updated for ${service.name}`);
     }
-
-    await fs.writeFile(FILE, JSON.stringify(data, null, 4));
-
-    console.log("Status updated");
 }
 
-main();
+await fs.writeFile(FILE, JSON.stringify(data, null, 4));
+
+console.log("Status updated");

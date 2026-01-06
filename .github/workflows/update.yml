@@ -28,13 +28,17 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
 
+      - name: Install dependencies
+        run: bun install
+
       - name: Update Announcement
         if: ${{ github.event.issue && github.event.issue.user.login == 'Prince527GitHub' }}
         run: bun announce.js
 
       - name: Update Status
-        if: ${{ github.event_name != 'issues' }}
-        run: bun update.js
+        run: |
+          bun update.js
+          bun chart.js
         env:
           DISCORD: ${{ secrets.DISCORD }}
 
