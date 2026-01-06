@@ -9,5 +9,9 @@
   },
   "keywords": [],
   "author": "Prinky",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "chart.js": "^4.5.1",
+    "chartjs-node-canvas": "^5.0.0"
+  }
 }
