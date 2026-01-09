@@ -39,6 +39,7 @@ jobs:
         run: |
           bun update.js
           bun chart.js
+          bun generate.js
         env:
           DISCORD: ${{ secrets.DISCORD }}
 
