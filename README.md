@@ -7,11 +7,11 @@ Uptime monitor for my services.
 
 | URL | Status | Response Time | Uptime |
 | --- | ------ | ------------- | ------ |
-| Cloverse (lvl 1) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_1_.png" height="20"> 384ms | 100%
-| Cloverse (lvl 2) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_2_.png" height="20"> 612ms | 100%
-| Cloverse (lvl 3) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_3_.png" height="20"> 247ms | 100%
-| Cloverse (lvl 4) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_4_.png" height="20"> 271ms | 100%
-| Clovara | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/clovara.png" height="20"> 636ms | 100%
-| Cloudflare | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/cloudflare.png" height="20"> 92ms | 100%
-| Heroku | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/heroku.png" height="20"> 93ms | 100%
-| Github | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/github.png" height="20"> 123ms | 100%
+| Cloverse (lvl 1) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_1_.png" height="20"> 602ms | 100%
+| Cloverse (lvl 2) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_2_.png" height="20"> 435ms | 100%
+| Cloverse (lvl 3) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_3_.png" height="20"> 455ms | 100%
+| Cloverse (lvl 4) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_4_.png" height="20"> 390ms | 100%
+| Clovara | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/clovara.png" height="20"> 863ms | 100%
+| Cloudflare | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/cloudflare.png" height="20"> 156ms | 100%
+| Heroku | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/heroku.png" height="20"> 225ms | 100%
+| Github | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/github.png" height="20"> 132ms | 100%
