@@ -31,25 +31,39 @@ async function discord(name, url, type = "down") {
     }
 }
 
+async function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 async function check(service) {
     let status = 0, duration = 0;
+    const count = service.retry || 1;
+    const delay = 60000;
 
-    const start = Date.now();
-    try {
-        const controller = new AbortController();
-        const timer = setTimeout(() => controller.abort(), TIMEOUT);
+    for (let attempt = 1; attempt <= count; attempt++) {
+        const start = Date.now();
+        try {
+            const controller = new AbortController();
+            const timer = setTimeout(() => controller.abort(), TIMEOUT);
 
-        const res = await fetch(service.url, {
-            method: service.method || "GET",
-            signal: controller.signal
-        });
+            const res = await fetch(service.url, {
+                method: service.method || "GET",
+                signal: controller.signal
+            });
 
-        clearTimeout(timer);
-        status = res.status;
-    } catch {
-        status = 0;
-    } finally {
-        duration = Date.now() - start;
+            clearTimeout(timer);
+            status = res.status;
+        } catch {
+            status = 0;
+        } finally {
+            duration = Date.now() - start;
+        }
+
+        if (status >= 200 && status < 400) break;
+        else if (attempt < count) {
+            console.log(`${service.name} failed (attempt ${attempt}/${count}), retrying in 1 minute...`);
+            await sleep(delay);
+        } else console.log(`${service.name} failed after ${count} attempts`);
     }
 
     const now = Date.now();
