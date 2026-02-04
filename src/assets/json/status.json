@@ -6,13 +6,8 @@
                 "name": "Cloverse (lvl 1)",
                 "url": "https://ntfy.twint.my.id/",
                 "method": "GET",
-                "uptime": 100,
+                "uptime": 98,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1770021425817,
-                        "time": 555
-                    },
                     {
                         "status": 200,
                         "date": 1770025292894,
@@ -257,6 +252,11 @@
                         "status": 200,
                         "date": 1770219470853,
                         "time": 427
+                    },
+                    {
+                        "status": 0,
+                        "date": 1770223231501,
+                        "time": 10002
                     }
                 ]
             },
@@ -264,13 +264,8 @@
                 "name": "Cloverse (lvl 2)",
                 "url": "https://git.serversmp.xyz/",
                 "method": "GET",
-                "uptime": 96,
+                "uptime": 94,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1770021426418,
-                        "time": 601
-                    },
                     {
                         "status": 200,
                         "date": 1770025293293,
@@ -515,6 +510,11 @@
                         "status": 200,
                         "date": 1770219471196,
                         "time": 343
+                    },
+                    {
+                        "status": 0,
+                        "date": 1770223241729,
+                        "time": 10001
                     }
                 ]
             },
@@ -522,13 +522,8 @@
                 "name": "Cloverse (lvl 3)",
                 "url": "https://api.serversmp.xyz/",
                 "method": "GET",
-                "uptime": 100,
+                "uptime": 98,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1770021426667,
-                        "time": 249
-                    },
                     {
                         "status": 200,
                         "date": 1770025293693,
@@ -773,6 +768,11 @@
                         "status": 200,
                         "date": 1770219471459,
                         "time": 263
+                    },
+                    {
+                        "status": 0,
+                        "date": 1770223251890,
+                        "time": 10001
                     }
                 ]
             },
@@ -780,13 +780,8 @@
                 "name": "Cloverse (lvl 4)",
                 "url": "https://chat.serversmp.xyz/",
                 "method": "GET",
-                "uptime": 100,
+                "uptime": 98,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1770021426930,
-                        "time": 263
-                    },
                     {
                         "status": 200,
                         "date": 1770025293925,
@@ -1031,6 +1026,11 @@
                         "status": 200,
                         "date": 1770219471839,
                         "time": 380
+                    },
+                    {
+                        "status": 0,
+                        "date": 1770223262125,
+                        "time": 10001
                     }
                 ]
             },
@@ -1040,11 +1040,6 @@
                 "method": "GET",
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1770021427749,
-                        "time": 819
-                    },
                     {
                         "status": 200,
                         "date": 1770025294411,
@@ -1289,6 +1284,11 @@
                         "status": 200,
                         "date": 1770219472418,
                         "time": 579
+                    },
+                    {
+                        "status": 200,
+                        "date": 1770223262971,
+                        "time": 559
                     }
                 ]
             }
@@ -1303,11 +1303,6 @@
                 "method": "GET",
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1770021427825,
-                        "time": 76
-                    },
                     {
                         "status": 200,
                         "date": 1770025294597,
@@ -1552,6 +1547,11 @@
                         "status": 200,
                         "date": 1770219472788,
                         "time": 370
+                    },
+                    {
+                        "status": 200,
+                        "date": 1770223263267,
+                        "time": 296
                     }
                 ]
             },
@@ -1561,11 +1561,6 @@
                 "method": "GET",
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1770021427954,
-                        "time": 129
-                    },
                     {
                         "status": 200,
                         "date": 1770025294719,
@@ -1810,6 +1805,11 @@
                         "status": 200,
                         "date": 1770219472919,
                         "time": 131
+                    },
+                    {
+                        "status": 200,
+                        "date": 1770223263311,
+                        "time": 44
                     }
                 ]
             },
@@ -1819,11 +1819,6 @@
                 "method": "GET",
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1770021428003,
-                        "time": 48
-                    },
                     {
                         "status": 200,
                         "date": 1770025294854,
@@ -2068,6 +2063,11 @@
                         "status": 200,
                         "date": 1770219473027,
                         "time": 108
+                    },
+                    {
+                        "status": 200,
+                        "date": 1770223263432,
+                        "time": 121
                     }
                 ]
             }
