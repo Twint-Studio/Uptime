@@ -6,6 +6,7 @@
                 "name": "Cloverse (lvl 1)",
                 "url": "https://ntfy.twint.my.id/",
                 "method": "GET",
+                "retry": 1,
                 "uptime": 98,
                 "raw": [
                     {
@@ -264,6 +265,7 @@
                 "name": "Cloverse (lvl 2)",
                 "url": "https://git.serversmp.xyz/",
                 "method": "GET",
+                "retry": 1,
                 "uptime": 94,
                 "raw": [
                     {
@@ -522,6 +524,7 @@
                 "name": "Cloverse (lvl 3)",
                 "url": "https://api.serversmp.xyz/",
                 "method": "GET",
+                "retry": 1,
                 "uptime": 98,
                 "raw": [
                     {
@@ -780,6 +783,7 @@
                 "name": "Cloverse (lvl 4)",
                 "url": "https://chat.serversmp.xyz/",
                 "method": "GET",
+                "retry": 1,
                 "uptime": 98,
                 "raw": [
                     {
@@ -1038,6 +1042,7 @@
                 "name": "Clovara",
                 "url": "https://pangolin.twint.my.id/",
                 "method": "GET",
+                "retry": 1,
                 "uptime": 100,
                 "raw": [
                     {
@@ -1301,6 +1306,7 @@
                 "name": "Cloudflare",
                 "url": "https://twint-uptime.pages.dev/",
                 "method": "GET",
+                "retry": 1,
                 "uptime": 100,
                 "raw": [
                     {
@@ -1559,6 +1565,7 @@
                 "name": "Heroku",
                 "url": "https://twint-752c68c6572a.herokuapp.com/",
                 "method": "GET",
+                "retry": 1,
                 "uptime": 100,
                 "raw": [
                     {
@@ -1817,6 +1824,7 @@
                 "name": "Github",
                 "url": "https://forkprince.github.io/SpaceWarp/",
                 "method": "GET",
+                "retry": 1,
                 "uptime": 100,
                 "raw": [
                     {
