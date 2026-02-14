@@ -1821,6 +1821,14 @@
                 ]
             },
             {
+                "name": "Railway",
+                "url": "https://4get.up.railway.app/",
+                "method": "GET",
+                "retry": 1,
+                "uptime": 100,
+                "raw": []
+            },
+            {
                 "name": "Github",
                 "url": "https://forkprince.github.io/SpaceWarp/",
                 "method": "GET",
