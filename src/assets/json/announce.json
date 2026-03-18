@@ -1,1 +1,5 @@
-{}
+{
+    "name": "\"security\" services that block twint.my.id",
+    "type": "info",
+    "url": "https://github.com/Twint-Studio/Uptime/issues/7"
+}
