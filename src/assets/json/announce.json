@@ -1,5 +1,5 @@
 {
-    "name": "\"security\" services that block twint.my.id",
-    "type": "info",
-    "url": "https://github.com/Twint-Studio/Uptime/issues/7"
+    "name": "Migration to Netbird",
+    "type": "warning",
+    "url": "https://github.com/Twint-Studio/Uptime/issues/8"
 }
