@@ -8,7 +8,7 @@
     {
         "id": 7,
         "name": "\"security\" services that block twint.my.id",
-        "type": "info",
+        "type": "warning",
         "url": "https://github.com/Twint-Studio/Uptime/issues/7"
     }
 ]
