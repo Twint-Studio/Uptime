@@ -23,25 +23,27 @@ function timeAgo(input) {
 
 async function getAnnouncement() {
     const data = await (await fetch("assets/json/announce.json")).json();
+    if (!data.length) return;
 
-    if (!data.name || !data.type) return;
+    for (const element of document.querySelectorAll(".alert")) element.remove();
 
-    const old = container.querySelector(".alert");
-    if (old) old.remove();
+    for (const announcement of data) {
+        if (!announcement.name || !announcement.type) continue;
 
-    container.insertAdjacentHTML(
-        "afterbegin",
-        /* html */`
-            <a href="${data.url}">
-                <div class="alert alert-${data.type}">
-                    <div class="alert-container">
-                        <svg class="alert-icon" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
-                        <span class="alert-text">${data.name}</span>
+        container.insertAdjacentHTML(
+            "afterbegin",
+            /* html */`
+                <a href="${announcement.url}">
+                    <div class="alert alert-${announcement.type}">
+                        <div class="alert-container">
+                            <svg class="alert-icon" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                            <span class="alert-text">${announcement.name}</span>
+                        </div>
                     </div>
-                </div>
-            </a>
-        `
-    );
+                </a>
+            `
+        );
+    }
 }
 
 function getColor(uptime) {

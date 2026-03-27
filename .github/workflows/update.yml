@@ -34,6 +34,8 @@ jobs:
       - name: Update Announcement
         if: ${{ github.event.issue && github.event.issue.user.login == 'Prince527GitHub' }}
         run: bun announce.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update Status
         run: |
