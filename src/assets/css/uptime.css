@@ -9,6 +9,10 @@
     gap: 1rem;
 }
 
+.group a:last-child {
+    margin-bottom: 1.25rem;
+}
+
 .category {
     background-color: var(--forground-color);
     border-radius: .5rem;
@@ -37,6 +41,7 @@ h3 {
 
 .alert {
     transition: all 0.2s ease-in-out;
+    margin-bottom: 0!important;
 }
 
 .alert:hover {
