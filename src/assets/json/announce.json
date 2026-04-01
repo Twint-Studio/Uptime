@@ -10,5 +10,11 @@
         "name": "\"security\" services that block twint.my.id",
         "type": "warning",
         "url": "https://github.com/Twint-Studio/Uptime/issues/7"
+    },
+    {
+        "id": 9,
+        "name": "Power Outage",
+        "type": "error",
+        "url": "https://github.com/Twint-Studio/Uptime/issues/9"
     }
 ]
