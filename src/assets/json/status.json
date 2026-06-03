@@ -1040,7 +1040,7 @@
             },
             {
                 "name": "Clovara",
-                "url": "https://auth.twint.us.kg/",
+                "url": "https://6get.twint.us.kg/",
                 "method": "GET",
                 "retry": 1,
                 "uptime": 96,
