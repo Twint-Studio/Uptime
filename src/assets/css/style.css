@@ -432,20 +432,20 @@ span.ripple {
 
 @media (max-width: 48rem) {
     .nav {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        text-align: left;
     }
 
     .nav-header {
-        margin-bottom: 0.625rem;
+        margin-bottom: 0;
     }
 
     .nav-item {
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     .nav-item.right {
-        margin-top: 0.625rem;
+        margin-top: 0;
     }
 }
 
