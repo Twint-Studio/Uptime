@@ -28,7 +28,7 @@ async function generate() {
 
             const status = up ? "🟩 Up" : "🟥 Down";
             const time = `${latest?.time ?? 0}ms`;
-            const img = `<img alt="Response time graph" src="./src/assets/img/${safe(group)}/${safe(site.name)}.png" height="20">`;
+            const img = `<img alt="Response time graph" src="./src/assets/img/${safe(group)}/${safe(site.name)}.svg" height="20">`;
 
             md += `| ${site.name} | ${status} | ${img} ${time} | ${site.uptime}%\n`;
         }
