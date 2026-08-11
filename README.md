@@ -7,11 +7,11 @@ Uptime monitor for my services.
 
 | URL | Status | Response Time | Uptime |
 | --- | ------ | ------------- | ------ |
-| Cloverse (lvl 1) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_1_.svg" height="20"> 254ms | 100%
-| Cloverse (lvl 2) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_2_.svg" height="20"> 934ms | 100%
-| Cloverse (lvl 3) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_3_.svg" height="20"> 253ms | 100%
-| Cloverse (lvl 4) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_4_.svg" height="20"> 248ms | 100%
-| Cloudflare | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/cloudflare.svg" height="20"> 60ms | 100%
-| Heroku | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/heroku.svg" height="20"> 19ms | 100%
-| Railway | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/railway.svg" height="20"> 1226ms | 98%
-| Github | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/github.svg" height="20"> 50ms | 100%
+| Cloverse (lvl 1) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_1_.svg" height="20"> 575ms | 100%
+| Cloverse (lvl 2) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_2_.svg" height="20"> 849ms | 100%
+| Cloverse (lvl 3) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_3_.svg" height="20"> 558ms | 100%
+| Cloverse (lvl 4) | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/internal/cloverse_lvl_4_.svg" height="20"> 588ms | 100%
+| Cloudflare | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/cloudflare.svg" height="20"> 169ms | 100%
+| Heroku | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/heroku.svg" height="20"> 227ms | 100%
+| Railway | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/railway.svg" height="20"> 1313ms | 98%
+| Github | 🟩 Up | <img alt="Response time graph" src="./src/assets/img/external/github.svg" height="20"> 292ms | 100%
