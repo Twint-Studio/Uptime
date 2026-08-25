@@ -7,13 +7,8 @@
                 "url": "https://vault.serversmp.xyz/",
                 "method": "GET",
                 "retry": 1,
-                "uptime": 98,
+                "uptime": 96,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1787512698117,
-                        "time": 321
-                    },
                     {
                         "status": 200,
                         "date": 1787514213188,
@@ -258,6 +253,11 @@
                         "status": 0,
                         "date": 1787650155325,
                         "time": 10002
+                    },
+                    {
+                        "status": 0,
+                        "date": 1787652104120,
+                        "time": 10002
                     }
                 ]
             },
@@ -266,13 +266,8 @@
                 "url": "https://git.serversmp.xyz/",
                 "method": "GET",
                 "retry": 1,
-                "uptime": 96,
+                "uptime": 94,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1787512698765,
-                        "time": 648
-                    },
                     {
                         "status": 200,
                         "date": 1787514213932,
@@ -517,6 +512,11 @@
                         "status": 0,
                         "date": 1787650165540,
                         "time": 10001
+                    },
+                    {
+                        "status": 0,
+                        "date": 1787652114122,
+                        "time": 10002
                     }
                 ]
             },
@@ -525,13 +525,8 @@
                 "url": "https://api.serversmp.xyz/",
                 "method": "GET",
                 "retry": 1,
-                "uptime": 96,
+                "uptime": 94,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1787512699072,
-                        "time": 307
-                    },
                     {
                         "status": 200,
                         "date": 1787514214483,
@@ -776,6 +771,11 @@
                         "status": 0,
                         "date": 1787650175681,
                         "time": 10001
+                    },
+                    {
+                        "status": 0,
+                        "date": 1787652124124,
+                        "time": 10001
                     }
                 ]
             },
@@ -784,13 +784,8 @@
                 "url": "https://chat.serversmp.xyz/",
                 "method": "GET",
                 "retry": 1,
-                "uptime": 96,
+                "uptime": 94,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1787512699290,
-                        "time": 218
-                    },
                     {
                         "status": 200,
                         "date": 1787514215006,
@@ -1035,6 +1030,11 @@
                         "status": 0,
                         "date": 1787650185682,
                         "time": 10001
+                    },
+                    {
+                        "status": 0,
+                        "date": 1787652134125,
+                        "time": 10001
                     }
                 ]
             }
@@ -1050,11 +1050,6 @@
                 "retry": 1,
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1787512699387,
-                        "time": 97
-                    },
                     {
                         "status": 200,
                         "date": 1787514215101,
@@ -1299,6 +1294,11 @@
                         "status": 200,
                         "date": 1787650185753,
                         "time": 71
+                    },
+                    {
+                        "status": 200,
+                        "date": 1787652134240,
+                        "time": 115
                     }
                 ]
             },
@@ -1309,11 +1309,6 @@
                 "retry": 1,
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1787512699583,
-                        "time": 195
-                    },
                     {
                         "status": 200,
                         "date": 1787514215381,
@@ -1558,6 +1553,11 @@
                         "status": 200,
                         "date": 1787650185775,
                         "time": 22
+                    },
+                    {
+                        "status": 200,
+                        "date": 1787652134265,
+                        "time": 25
                     }
                 ]
             },
@@ -1568,11 +1568,6 @@
                 "retry": 1,
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1787512700835,
-                        "time": 1252
-                    },
                     {
                         "status": 200,
                         "date": 1787514216734,
@@ -1817,6 +1812,11 @@
                         "status": 200,
                         "date": 1787650186965,
                         "time": 1190
+                    },
+                    {
+                        "status": 200,
+                        "date": 1787652134428,
+                        "time": 163
                     }
                 ]
             },
@@ -1827,11 +1827,6 @@
                 "retry": 1,
                 "uptime": 100,
                 "raw": [
-                    {
-                        "status": 200,
-                        "date": 1787512701033,
-                        "time": 198
-                    },
                     {
                         "status": 200,
                         "date": 1787514216852,
@@ -2076,6 +2071,11 @@
                         "status": 200,
                         "date": 1787650187061,
                         "time": 96
+                    },
+                    {
+                        "status": 200,
+                        "date": 1787652134536,
+                        "time": 108
                     }
                 ]
             }
