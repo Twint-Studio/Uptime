@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": 15,
+        "name": "Power Failure",
+        "type": "error",
+        "url": "https://github.com/Twint-Studio/Uptime/issues/15"
+    }
+]
