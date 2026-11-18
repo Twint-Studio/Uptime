@@ -1,0 +1,6 @@
+name = "uptime-proxy"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+ALLOWED_HOSTS = "vault.serversmp.xyz,git.serversmp.xyz,api.serversmp.xyz,chat.serversmp.xyz,twint-uptime.pages.dev,twint-752c68c6572a.herokuapp.com,4get.up.railway.app,forkprince.github.io"

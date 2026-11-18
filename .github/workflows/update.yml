@@ -41,6 +41,8 @@ jobs:
           bun generate.js
         env:
           DISCORD: ${{ secrets.DISCORD }}
+          PROXY: ${{ secrets.PROXY }}
+          PROXY_SECRET: ${{ secrets.PROXY_SECRET }}
 
       - name: Check for changes
         id: changes

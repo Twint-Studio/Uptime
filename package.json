@@ -1,15 +1,18 @@
 {
   "name": "uptime",
   "version": "1.0.0",
+  "author": "Prinky",
   "description": "",
+  "keywords": [],
+  "license": "BSD-2-Clause",
   "scripts": {
     "update": "bun update.js",
     "announce": "bun announce.js",
     "generate": "bun generate.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "proxy:deploy": "wrangler deploy --config worker/wrangler.toml",
+    "proxy:secret": "wrangler secret put PROXY_SECRET --config worker/wrangler.toml"
   },
-  "keywords": [],
-  "author": "Prinky",
-  "license": "BSD-2-Clause",
-  "dependencies": {}
+  "devDependencies": {
+    "wrangler": "^4.165.0"
+  }
 }
